@@ -1,3 +1,4 @@
-const hello: string = "Hello, typescripd"
-console.log(hello)
-
+import service from './service'
+import AdminTable from './Table'
+const table:AdminTable = new AdminTable()
+table.renderUsers(service.getUsers)
